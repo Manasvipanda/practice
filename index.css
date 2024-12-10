@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgb(55, 52, 52);
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 800px;
+    width: 50%;
+}
+h2{
+    font-size: 2rem;
+    flex-wrap: wrap;
+
+}
+
+.user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+
+.user-input-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#user-ip{
+    width: 80%;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+#search-btn{
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+.circle{
+width: 120px;
+height: 120px;
+border-radius: 50%;
+border: 4px solid #299f5d;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1rem;
+color: white;
+font-weight: 700;
+background: conic-gradient(#299f5d var(--progress-degree, 0%), #283a2e 0%);
+/* this bg helps in upadating the pie chart color acc to 
+the var from inputs */
+flex-direction: column;
+
+}
+
+.circle span{
+    position: relative;
+    z-index: 2;
+}
+
+.progress{
+   display: flex;
+   flex-direction: row;
+   gap: 1px;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+    
+    
+}
+
+.stats-card{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    
+}
+
+h4{
+    font-size: 1rem;
+}
+
+.card{
+    background-color: azure;
+    width: 40%;
+    max-width: 290px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    min-height: 4rem;
+}
